@@ -1,9 +1,9 @@
 ﻿using System.Data;
 using Dapper;
-using WS1.UtilsClasses;
+using Utils;
 using System.Data.SqlClient;
 
-namespace WS1.DataUtils
+namespace DataAcessUtils
 {
     /// <summary>
     /// Class that is used for talking to the database
