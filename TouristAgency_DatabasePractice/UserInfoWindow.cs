@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ModelClasses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TouristAgency_DatabasePractice.Core;
 
 namespace TouristAgency_DatabasePractice
 {
@@ -15,6 +17,13 @@ namespace TouristAgency_DatabasePractice
         public UserInfoWindow()
         {
             InitializeComponent();
+        }
+
+        private void SubmitButton_Click(object sender, EventArgs e)
+        {
+            // creating new user to put it in Global variables class
+            Client client = new Client(FNTextBox.Text,LNTextBox.Text,AddressTextBox.Text,CountryTextBox.Text,PhoneNTextBox.Text);
+            GlobalVariables.CurrentClient = client;
         }
     }
 }
