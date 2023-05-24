@@ -29,10 +29,12 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.DurationLabel = new System.Windows.Forms.Label();
+            this.labell = new System.Windows.Forms.Label();
+            this.DescriptionTextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.PriceLabel = new System.Windows.Forms.Label();
-            this.OpenTimeLabel = new System.Windows.Forms.Label();
+            this.DateLabel = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.AddButton = new System.Windows.Forms.Button();
@@ -40,21 +42,19 @@
             this.label22 = new System.Windows.Forms.Label();
             this.NameLabel = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DurationLabel = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.BurlyWood;
-            this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.DurationLabel);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.labell);
+            this.panel2.Controls.Add(this.DescriptionTextBox);
+            this.panel2.Controls.Add(this.pictureBox);
             this.panel2.Controls.Add(this.PriceLabel);
-            this.panel2.Controls.Add(this.OpenTimeLabel);
+            this.panel2.Controls.Add(this.DateLabel);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.AddButton);
@@ -67,24 +67,44 @@
             this.panel2.Size = new System.Drawing.Size(421, 263);
             this.panel2.TabIndex = 29;
             // 
-            // textBox1
+            // DurationLabel
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Tan;
-            this.textBox1.Location = new System.Drawing.Point(11, 131);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(392, 80);
-            this.textBox1.TabIndex = 40;
+            this.DurationLabel.AutoSize = true;
+            this.DurationLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DurationLabel.Location = new System.Drawing.Point(96, 86);
+            this.DurationLabel.Name = "DurationLabel";
+            this.DurationLabel.Size = new System.Drawing.Size(27, 15);
+            this.DurationLabel.TabIndex = 42;
+            this.DurationLabel.Text = "null";
             // 
-            // pictureBox2
+            // labell
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(295, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(108, 108);
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
+            this.labell.AutoSize = true;
+            this.labell.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.labell.Location = new System.Drawing.Point(38, 86);
+            this.labell.Name = "labell";
+            this.labell.Size = new System.Drawing.Size(56, 15);
+            this.labell.TabIndex = 41;
+            this.labell.Text = "Duration:";
+            // 
+            // DescriptionTextBox
+            // 
+            this.DescriptionTextBox.BackColor = System.Drawing.Color.Tan;
+            this.DescriptionTextBox.Location = new System.Drawing.Point(11, 131);
+            this.DescriptionTextBox.Multiline = true;
+            this.DescriptionTextBox.Name = "DescriptionTextBox";
+            this.DescriptionTextBox.ReadOnly = true;
+            this.DescriptionTextBox.Size = new System.Drawing.Size(392, 80);
+            this.DescriptionTextBox.TabIndex = 40;
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox.Location = new System.Drawing.Point(295, 17);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(108, 108);
+            this.pictureBox.TabIndex = 25;
+            this.pictureBox.TabStop = false;
             // 
             // PriceLabel
             // 
@@ -96,25 +116,25 @@
             this.PriceLabel.TabIndex = 38;
             this.PriceLabel.Text = "null";
             // 
-            // OpenTimeLabel
+            // DateLabel
             // 
-            this.OpenTimeLabel.AutoSize = true;
-            this.OpenTimeLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.OpenTimeLabel.Location = new System.Drawing.Point(96, 108);
-            this.OpenTimeLabel.Name = "OpenTimeLabel";
-            this.OpenTimeLabel.Size = new System.Drawing.Size(27, 15);
-            this.OpenTimeLabel.TabIndex = 36;
-            this.OpenTimeLabel.Text = "null";
+            this.DateLabel.AutoSize = true;
+            this.DateLabel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.DateLabel.Location = new System.Drawing.Point(96, 108);
+            this.DateLabel.Name = "DateLabel";
+            this.DateLabel.Size = new System.Drawing.Size(27, 15);
+            this.DateLabel.TabIndex = 36;
+            this.DateLabel.Text = "null";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label17.Location = new System.Drawing.Point(28, 108);
+            this.label17.Location = new System.Drawing.Point(60, 108);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(66, 15);
+            this.label17.Size = new System.Drawing.Size(34, 15);
             this.label17.TabIndex = 35;
-            this.label17.Text = "Open time:";
+            this.label17.Text = "Date:";
             // 
             // label18
             // 
@@ -176,26 +196,6 @@
             this.label24.TabIndex = 27;
             this.label24.Text = "Name:";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(96, 86);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(27, 15);
-            this.label1.TabIndex = 42;
-            this.label1.Text = "null";
-            // 
-            // DurationLabel
-            // 
-            this.DurationLabel.AutoSize = true;
-            this.DurationLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.DurationLabel.Location = new System.Drawing.Point(38, 86);
-            this.DurationLabel.Name = "DurationLabel";
-            this.DurationLabel.Size = new System.Drawing.Size(56, 15);
-            this.DurationLabel.TabIndex = 41;
-            this.DurationLabel.Text = "Duration:";
-            // 
             // ActivityControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -206,7 +206,7 @@
             this.Size = new System.Drawing.Size(433, 277);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -214,12 +214,12 @@
         #endregion
 
         private Panel panel2;
-        private Label label1;
         private Label DurationLabel;
-        private TextBox textBox1;
-        private PictureBox pictureBox2;
+        private Label labell;
+        private TextBox DescriptionTextBox;
+        private PictureBox pictureBox;
         private Label PriceLabel;
-        private Label OpenTimeLabel;
+        private Label DateLabel;
         private Label label17;
         private Label label18;
         private Button AddButton;
