@@ -16,6 +16,7 @@ namespace TouristAgency_DatabasePractice.Forms
         public MainWindow()
         {
             InitializeComponent();
+            DateLabel.Text = "Welcome, today is: " + DateTime.Today.ToShortDateString();
         }
 
         private void ExitButton_Click(object sender, EventArgs e)
@@ -27,7 +28,9 @@ namespace TouristAgency_DatabasePractice.Forms
         {
             if(GlobalVariables.CurrentClient.FirstName == "admin")
             {
-
+              AdminWindow adminWindow = new AdminWindow();
+              Hide();
+              adminWindow.ShowDialog();
             }
             else
             {

@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TouristAgency_DatabasePractice.Core;
+using TouristAgency_DatabasePractice.Forms;
 
 namespace TouristAgency_DatabasePractice
 {
@@ -28,6 +29,13 @@ namespace TouristAgency_DatabasePractice
                 // creating new user to put it in Global variables class
                 Client client = new Client(FNTextBox.Text, LNTextBox.Text, AddressTextBox.Text, CountryTextBox.Text, PhoneNTextBox.Text);
                 GlobalVariables.CurrentClient = client;
+
+                // opening main window
+                MainWindow mainwindow = new MainWindow();
+                Hide();
+                mainwindow.ShowDialog();
+                Close();
+                
             }
             else
             {

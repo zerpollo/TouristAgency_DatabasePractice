@@ -67,7 +67,7 @@
             this.Museums.Location = new System.Drawing.Point(4, 24);
             this.Museums.Name = "Museums";
             this.Museums.Padding = new System.Windows.Forms.Padding(3);
-            this.Museums.Size = new System.Drawing.Size(768, 343);
+            this.Museums.Size = new System.Drawing.Size(1308, 739);
             this.Museums.TabIndex = 1;
             this.Museums.Text = "Museums";
             this.Museums.UseVisualStyleBackColor = true;
@@ -77,7 +77,7 @@
             this.Restaraunts.Location = new System.Drawing.Point(4, 24);
             this.Restaraunts.Name = "Restaraunts";
             this.Restaraunts.Padding = new System.Windows.Forms.Padding(3);
-            this.Restaraunts.Size = new System.Drawing.Size(768, 343);
+            this.Restaraunts.Size = new System.Drawing.Size(1308, 739);
             this.Restaraunts.TabIndex = 2;
             this.Restaraunts.Text = "Restaraunts";
             this.Restaraunts.UseVisualStyleBackColor = true;
@@ -87,7 +87,7 @@
             this.Activities.Location = new System.Drawing.Point(4, 24);
             this.Activities.Name = "Activities";
             this.Activities.Padding = new System.Windows.Forms.Padding(3);
-            this.Activities.Size = new System.Drawing.Size(768, 343);
+            this.Activities.Size = new System.Drawing.Size(1308, 739);
             this.Activities.TabIndex = 3;
             this.Activities.Text = "Activities";
             this.Activities.UseVisualStyleBackColor = true;
@@ -125,7 +125,7 @@
             // 
             this.DateLabel.AutoSize = true;
             this.DateLabel.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DateLabel.Location = new System.Drawing.Point(184, 785);
+            this.DateLabel.Location = new System.Drawing.Point(184, 783);
             this.DateLabel.Name = "DateLabel";
             this.DateLabel.Size = new System.Drawing.Size(202, 25);
             this.DateLabel.TabIndex = 4;
