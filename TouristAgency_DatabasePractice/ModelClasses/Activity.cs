@@ -10,7 +10,6 @@ namespace ModelClasses
     {
         private int id;
         private int duration;
-        private int peopleQuantity;
         private int price;
         private string name;
         private string description;
@@ -18,7 +17,6 @@ namespace ModelClasses
 
         public int ID { get => id; set => id = value; }
         public int Duration { get => duration; set => duration = value; }
-        public int PeopleQuantity { get => peopleQuantity; set => peopleQuantity = value; }
         public int Price { get => price; set => price = value; }
         public string Name { get => name; set => name = value; }
         public string Description { get => description; set => description = value; }
@@ -27,7 +25,6 @@ namespace ModelClasses
         public Activity(int dateTimeID, int languageID, int duration, int peopleQuantity, int price, string name, string description, string location)
         {
             this.duration = duration;
-            this.peopleQuantity = peopleQuantity;
             this.price = price;
             this.name = name;
             this.description = description;
