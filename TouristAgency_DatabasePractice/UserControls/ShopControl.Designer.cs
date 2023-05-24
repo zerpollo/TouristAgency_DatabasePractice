@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.DescriptionTextBox = new System.Windows.Forms.TextBox();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.CloseTimeLabel = new System.Windows.Forms.Label();
             this.OpenTimeLabel = new System.Windows.Forms.Label();
@@ -43,14 +43,14 @@
             this.NameLabel = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.BurlyWood;
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.DescriptionTextBox);
+            this.panel2.Controls.Add(this.pictureBox);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.CloseTimeLabel);
             this.panel2.Controls.Add(this.OpenTimeLabel);
@@ -67,24 +67,24 @@
             this.panel2.Size = new System.Drawing.Size(421, 264);
             this.panel2.TabIndex = 29;
             // 
-            // textBox1
+            // DescriptionTextBox
             // 
-            this.textBox1.BackColor = System.Drawing.Color.Tan;
-            this.textBox1.Location = new System.Drawing.Point(11, 131);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(392, 80);
-            this.textBox1.TabIndex = 40;
+            this.DescriptionTextBox.BackColor = System.Drawing.Color.Tan;
+            this.DescriptionTextBox.Location = new System.Drawing.Point(11, 131);
+            this.DescriptionTextBox.Multiline = true;
+            this.DescriptionTextBox.Name = "DescriptionTextBox";
+            this.DescriptionTextBox.ReadOnly = true;
+            this.DescriptionTextBox.Size = new System.Drawing.Size(392, 80);
+            this.DescriptionTextBox.TabIndex = 40;
             // 
-            // pictureBox2
+            // pictureBox
             // 
-            this.pictureBox2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox2.Location = new System.Drawing.Point(295, 17);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(108, 108);
-            this.pictureBox2.TabIndex = 25;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox.Location = new System.Drawing.Point(295, 17);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(108, 108);
+            this.pictureBox.TabIndex = 25;
+            this.pictureBox.TabStop = false;
             // 
             // label13
             // 
@@ -207,7 +207,7 @@
             this.Size = new System.Drawing.Size(432, 278);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -215,8 +215,8 @@
         #endregion
 
         private Panel panel2;
-        private TextBox textBox1;
-        private PictureBox pictureBox2;
+        private TextBox DescriptionTextBox;
+        private PictureBox pictureBox;
         private Label label13;
         private Label CloseTimeLabel;
         private Label OpenTimeLabel;
