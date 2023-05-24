@@ -9,17 +9,14 @@ namespace ModelClasses
     public class DateTimeDB
     {
         private int id;
-        private DateOnly date;
-        private TimeOnly time;
+        private DateTime dateTime;
 
         public int ID { get => id; set => id = value; }
-        public DateOnly Date { get => date; set => date = value; }
-        public TimeOnly Time { get => time; set => time = value; }
+        public DateTime DateTime { get => dateTime; set => dateTime = value; }
 
-        public DateTimeDB(DateOnly date, TimeOnly time)
+        public DateTimeDB(DateTime datetime)
         {
-            this.Date = date;
-            this.Time = time;
+            this.dateTime = datetime;
         } 
         public DateTimeDB()
         {
