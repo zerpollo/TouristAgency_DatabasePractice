@@ -29,7 +29,6 @@ namespace TouristAgency_DatabasePractice.Forms
             if(GlobalVariables.CurrentClient.FirstName == "admin")
             {
               AdminWindow adminWindow = new AdminWindow();
-              Hide();
               adminWindow.ShowDialog();
             }
             else
