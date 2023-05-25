@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TouristAgency_DatabasePractice.Forms.AdminPanelWindows;
 
 namespace TouristAgency_DatabasePractice.Forms
 {
@@ -20,6 +21,18 @@ namespace TouristAgency_DatabasePractice.Forms
         private void ExitButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void AddShopButton_Click(object sender, EventArgs e)
+        {
+            NewShopWindow newShop = new NewShopWindow();
+            newShop.ShowDialog();
+        }
+
+        private void AddRestarauntButton_Click(object sender, EventArgs e)
+        {
+            NewRestarauntWindow newRestaraunt = new NewRestarauntWindow();
+            newRestaraunt.ShowDialog();
         }
     }
 }

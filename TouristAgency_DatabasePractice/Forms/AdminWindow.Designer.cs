@@ -45,6 +45,7 @@
             this.AddShopButton.TabIndex = 0;
             this.AddShopButton.Text = "Add Shop";
             this.AddShopButton.UseVisualStyleBackColor = true;
+            this.AddShopButton.Click += new System.EventHandler(this.AddShopButton_Click);
             // 
             // AddRestarauntButton
             // 
@@ -54,6 +55,7 @@
             this.AddRestarauntButton.TabIndex = 1;
             this.AddRestarauntButton.Text = "Add Restaraunt";
             this.AddRestarauntButton.UseVisualStyleBackColor = true;
+            this.AddRestarauntButton.Click += new System.EventHandler(this.AddRestarauntButton_Click);
             // 
             // AddMuseumButton
             // 
