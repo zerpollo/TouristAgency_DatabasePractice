@@ -37,5 +37,12 @@ namespace TouristAgency_DatabasePractice.Forms
                 MessageBox.Show("You don't have rights.");
             }
         }
+
+        private void ToTourButton_Click(object sender, EventArgs e)
+        {
+            ToTourWindow toTourWindow = new ToTourWindow();
+            Hide();
+            toTourWindow.ShowDialog();
+        }
     }
 }
