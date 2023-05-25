@@ -100,6 +100,7 @@
             this.ToTourButton.TabIndex = 1;
             this.ToTourButton.Text = "To Tour";
             this.ToTourButton.UseVisualStyleBackColor = true;
+            this.ToTourButton.Click += new System.EventHandler(this.ToTourButton_Click);
             // 
             // ExitButton
             // 
