@@ -37,7 +37,8 @@ namespace TouristAgency_DatabasePractice.Forms
 
         private void AddLangToActButton_Click(object sender, EventArgs e)
         {
-
+            AddLanguageToActivityWindow addLanguageToActivityWindow = new AddLanguageToActivityWindow();
+            addLanguageToActivityWindow.ShowDialog();
         }
 
         private void AddLanguageButton_Click(object sender, EventArgs e)
