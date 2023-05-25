@@ -65,6 +65,7 @@
             this.AddMuseumButton.TabIndex = 2;
             this.AddMuseumButton.Text = "Add Museum";
             this.AddMuseumButton.UseVisualStyleBackColor = true;
+            this.AddMuseumButton.Click += new System.EventHandler(this.AddMuseumButton_Click);
             // 
             // AddActivityButton
             // 
@@ -74,6 +75,7 @@
             this.AddActivityButton.TabIndex = 3;
             this.AddActivityButton.Text = "Add Activity";
             this.AddActivityButton.UseVisualStyleBackColor = true;
+            this.AddActivityButton.Click += new System.EventHandler(this.AddActivityButton_Click);
             // 
             // AddLanguageButton
             // 
@@ -83,6 +85,7 @@
             this.AddLanguageButton.TabIndex = 4;
             this.AddLanguageButton.Text = "Add Language";
             this.AddLanguageButton.UseVisualStyleBackColor = true;
+            this.AddLanguageButton.Click += new System.EventHandler(this.AddLanguageButton_Click);
             // 
             // AddLangToActButton
             // 
@@ -92,6 +95,7 @@
             this.AddLangToActButton.TabIndex = 5;
             this.AddLangToActButton.Text = "Add Language to Activity";
             this.AddLangToActButton.UseVisualStyleBackColor = true;
+            this.AddLangToActButton.Click += new System.EventHandler(this.AddLangToActButton_Click);
             // 
             // ExitButton
             // 

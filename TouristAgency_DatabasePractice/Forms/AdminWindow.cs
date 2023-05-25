@@ -34,5 +34,25 @@ namespace TouristAgency_DatabasePractice.Forms
             NewRestarauntWindow newRestaraunt = new NewRestarauntWindow();
             newRestaraunt.ShowDialog();
         }
+
+        private void AddLangToActButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddLanguageButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddActivityButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AddMuseumButton_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
