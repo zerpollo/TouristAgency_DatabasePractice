@@ -13,18 +13,18 @@ namespace ModelClasses
         private string name;
         private string location;
         private string phoneNumber;
-        private TimeOnly openTime;
-        private TimeOnly closeTime;
+        private TimeSpan openTime;
+        private TimeSpan closeTime;
 
         public int ID { get => id; set => id = value; }
         public float Price { get => price; set => price = value; }
         public string Name { get => name; set => name = value; }
         public string Location { get => location; set => location = value; }
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
-        public TimeOnly OpenTime { get => openTime; set => openTime = value; }
-        public TimeOnly CloseTime { get => closeTime; set => closeTime = value; }
+        public TimeSpan OpenTime { get => openTime; set => openTime = value; }
+        public TimeSpan CloseTime { get => closeTime; set => closeTime = value; }
 
-        public Museum(float price, string name, string location, string phoneNumber, TimeOnly openTime, TimeOnly closeTime)
+        public Museum(float price, string name, string location, string phoneNumber, TimeSpan openTime, TimeSpan closeTime)
         {
             this.Price = price;
             this.Name = name;

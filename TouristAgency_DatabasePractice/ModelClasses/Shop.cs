@@ -12,17 +12,17 @@ namespace ModelClasses
         private string name;
         private string location;
         private string description;
-        private TimeOnly openTime;
-        private TimeOnly closeTime;
+        private TimeSpan openTime;
+        private TimeSpan closeTime;
 
         public int ID { get => id; set => id = value; }
         public string Name { get => name; set => name = value; }
         public string Location { get => location; set => location = value; }
         public string Description { get => description; set => description = value; }
-        public TimeOnly OpenTime { get => openTime; set => openTime = value; }
-        public TimeOnly CloseTime { get => closeTime; set => closeTime = value; }
+        public TimeSpan OpenTime { get => openTime; set => openTime = value; }
+        public TimeSpan CloseTime { get => closeTime; set => closeTime = value; }
 
-        public Shop(string name, string location, string description, TimeOnly openTime, TimeOnly closeTime)
+        public Shop(string name, string location, string description, TimeSpan openTime, TimeSpan closeTime)
         {
             this.Name = name;
             this.Location = location;
