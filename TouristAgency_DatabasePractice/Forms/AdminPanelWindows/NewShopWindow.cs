@@ -1,4 +1,6 @@
-﻿using System;
+﻿using DataAcessUtils;
+using ModelClasses;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,16 +19,35 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
         {
             InitializeComponent();
             OpenTimeComboBox.DataSource = StandartValues.timeOptions;
-            OpenTimeComboBox.DisplayMember = "ToShortTimeString";
+            OpenTimeComboBox.DisplayMember = "ToString";
 
             CloseTimeComboBox.BindingContext = new BindingContext();
             CloseTimeComboBox.DataSource = StandartValues.timeOptions;
-            CloseTimeComboBox.DisplayMember = "ToShortTimeString";
+            CloseTimeComboBox.DisplayMember = "ToString";
         }
 
-        private void AddButton_Click(object sender, EventArgs e)
+        private async void AddButton_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                DataAccess da = new DataAccess();
+                Shop shop = new Shop();
+                shop.Name = NameTextBox.Text;
+                shop.Location = LocationTextBox.Text;
+                shop.CloseTime = (TimeSpan)CloseTimeComboBox.SelectedItem;
+                shop.OpenTime = (TimeSpan)OpenTimeComboBox.SelectedItem;
+                shop.Description = DescriptionTextBox.Text;
+                await da.SaveData("dbo.InsertNewShopProc", new { shop.Name, shop.Location, shop.OpenTime, shop.CloseTime, shop.Description });
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+                return;
+            }
+            MessageBox.Show("Success!");
+            NameTextBox.Text = "";
+            LocationTextBox.Text = "";
+            DescriptionTextBox.Text = "";
         }
 
         private void NewShopWindow_Load(object sender, EventArgs e)

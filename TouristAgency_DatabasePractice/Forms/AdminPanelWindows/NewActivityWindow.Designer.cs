@@ -81,6 +81,7 @@
             this.AddButton.TabIndex = 56;
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // DescriptionTextBox
             // 
