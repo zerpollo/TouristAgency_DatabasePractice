@@ -42,17 +42,20 @@ namespace TouristAgency_DatabasePractice.Forms
 
         private void AddLanguageButton_Click(object sender, EventArgs e)
         {
-
+            NewLanguageWindow newLang = new NewLanguageWindow();
+            newLang.ShowDialog();
         }
 
         private void AddActivityButton_Click(object sender, EventArgs e)
         {
-
+            NewActivityWindow newActivityWindow = new NewActivityWindow();
+            newActivityWindow.ShowDialog();
         }
 
         private void AddMuseumButton_Click(object sender, EventArgs e)
         {
-
+            NewMuseumWindow newMuseumWindow = new NewMuseumWindow();
+            newMuseumWindow.ShowDialog();
         }
     }
 }
