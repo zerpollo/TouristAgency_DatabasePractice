@@ -35,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.NumberOfPeopleComboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.SelectedItemsFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // ReturnButton
@@ -107,12 +107,12 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Number of people:";
             // 
-            // flowLayoutPanel1
+            // SelectedItemsFlowLayoutPanel
             // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 42);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(843, 365);
-            this.flowLayoutPanel1.TabIndex = 8;
+            this.SelectedItemsFlowLayoutPanel.Location = new System.Drawing.Point(12, 42);
+            this.SelectedItemsFlowLayoutPanel.Name = "SelectedItemsFlowLayoutPanel";
+            this.SelectedItemsFlowLayoutPanel.Size = new System.Drawing.Size(843, 365);
+            this.SelectedItemsFlowLayoutPanel.TabIndex = 8;
             // 
             // ToTourWindow
             // 
@@ -120,7 +120,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(867, 469);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.SelectedItemsFlowLayoutPanel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.NumberOfPeopleComboBox);
             this.Controls.Add(this.label3);
@@ -144,6 +144,6 @@
         private Label label3;
         private ComboBox NumberOfPeopleComboBox;
         private Label label4;
-        private FlowLayoutPanel flowLayoutPanel1;
+        private FlowLayoutPanel SelectedItemsFlowLayoutPanel;
     }
 }
