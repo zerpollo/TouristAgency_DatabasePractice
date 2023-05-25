@@ -30,13 +30,12 @@
         {
             this.ReturnButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.SelectedItemsDataGridView = new System.Windows.Forms.DataGridView();
             this.PayButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.NumberOfPeopleComboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.SelectedItemsDataGridView)).BeginInit();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // ReturnButton
@@ -59,21 +58,6 @@
             this.label1.Size = new System.Drawing.Size(159, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Selected items:";
-            // 
-            // SelectedItemsDataGridView
-            // 
-            this.SelectedItemsDataGridView.AllowUserToAddRows = false;
-            this.SelectedItemsDataGridView.AllowUserToDeleteRows = false;
-            this.SelectedItemsDataGridView.AllowUserToResizeColumns = false;
-            this.SelectedItemsDataGridView.AllowUserToResizeRows = false;
-            this.SelectedItemsDataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
-            this.SelectedItemsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.SelectedItemsDataGridView.Location = new System.Drawing.Point(12, 42);
-            this.SelectedItemsDataGridView.Name = "SelectedItemsDataGridView";
-            this.SelectedItemsDataGridView.ReadOnly = true;
-            this.SelectedItemsDataGridView.RowTemplate.Height = 25;
-            this.SelectedItemsDataGridView.Size = new System.Drawing.Size(843, 367);
-            this.SelectedItemsDataGridView.TabIndex = 2;
             // 
             // PayButton
             // 
@@ -123,23 +107,29 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Number of people:";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 42);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(843, 365);
+            this.flowLayoutPanel1.TabIndex = 8;
+            // 
             // ToTourWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BurlyWood;
             this.ClientSize = new System.Drawing.Size(867, 469);
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.NumberOfPeopleComboBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.PayButton);
-            this.Controls.Add(this.SelectedItemsDataGridView);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ReturnButton);
             this.Name = "ToTourWindow";
             this.Text = "ToTourWindow";
-            ((System.ComponentModel.ISupportInitialize)(this.SelectedItemsDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -149,11 +139,11 @@
 
         private Button ReturnButton;
         private Label label1;
-        private DataGridView SelectedItemsDataGridView;
         private Button PayButton;
         private Label label2;
         private Label label3;
         private ComboBox NumberOfPeopleComboBox;
         private Label label4;
+        private FlowLayoutPanel flowLayoutPanel1;
     }
 }
