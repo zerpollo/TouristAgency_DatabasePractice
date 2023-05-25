@@ -24,5 +24,10 @@ namespace TouristAgency_DatabasePractice.Forms
             mainWindow.ShowDialog();
 
         }
+
+        private void PayButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Thank you!");
+        }
     }
 }

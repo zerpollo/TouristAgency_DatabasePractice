@@ -68,6 +68,7 @@
             this.PayButton.TabIndex = 3;
             this.PayButton.Text = "Pay";
             this.PayButton.UseVisualStyleBackColor = false;
+            this.PayButton.Click += new System.EventHandler(this.PayButton_Click);
             // 
             // label2
             // 
