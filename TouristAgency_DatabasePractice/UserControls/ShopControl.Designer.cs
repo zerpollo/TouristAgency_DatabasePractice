@@ -60,7 +60,7 @@
             this.panel2.Controls.Add(this.label24);
             this.panel2.Location = new System.Drawing.Point(5, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(421, 264);
+            this.panel2.Size = new System.Drawing.Size(505, 296);
             this.panel2.TabIndex = 29;
             // 
             // DescriptionTextBox
@@ -70,13 +70,13 @@
             this.DescriptionTextBox.Multiline = true;
             this.DescriptionTextBox.Name = "DescriptionTextBox";
             this.DescriptionTextBox.ReadOnly = true;
-            this.DescriptionTextBox.Size = new System.Drawing.Size(392, 80);
+            this.DescriptionTextBox.Size = new System.Drawing.Size(483, 80);
             this.DescriptionTextBox.TabIndex = 40;
             // 
             // pictureBox
             // 
             this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox.Location = new System.Drawing.Point(295, 17);
+            this.pictureBox.Location = new System.Drawing.Point(386, 17);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(108, 108);
             this.pictureBox.TabIndex = 25;
@@ -87,7 +87,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label13.Location = new System.Drawing.Point(162, 55);
+            this.label13.Location = new System.Drawing.Point(177, 73);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(22, 30);
             this.label13.TabIndex = 39;
@@ -97,7 +97,7 @@
             // 
             this.CloseTimeLabel.AutoSize = true;
             this.CloseTimeLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.CloseTimeLabel.Location = new System.Drawing.Point(190, 65);
+            this.CloseTimeLabel.Location = new System.Drawing.Point(202, 84);
             this.CloseTimeLabel.Name = "CloseTimeLabel";
             this.CloseTimeLabel.Size = new System.Drawing.Size(27, 15);
             this.CloseTimeLabel.TabIndex = 37;
@@ -107,7 +107,7 @@
             // 
             this.OpenTimeLabel.AutoSize = true;
             this.OpenTimeLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.OpenTimeLabel.Location = new System.Drawing.Point(118, 65);
+            this.OpenTimeLabel.Location = new System.Drawing.Point(125, 84);
             this.OpenTimeLabel.Name = "OpenTimeLabel";
             this.OpenTimeLabel.Size = new System.Drawing.Size(27, 15);
             this.OpenTimeLabel.TabIndex = 36;
@@ -117,7 +117,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label17.Location = new System.Drawing.Point(11, 65);
+            this.label17.Location = new System.Drawing.Point(10, 84);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(106, 15);
             this.label17.TabIndex = 35;
@@ -126,7 +126,7 @@
             // AddButton
             // 
             this.AddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.AddButton.Location = new System.Drawing.Point(162, 217);
+            this.AddButton.Location = new System.Drawing.Point(202, 217);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(97, 39);
             this.AddButton.TabIndex = 33;
@@ -138,7 +138,7 @@
             // 
             this.LocationLabel.AutoSize = true;
             this.LocationLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LocationLabel.Location = new System.Drawing.Point(118, 41);
+            this.LocationLabel.Location = new System.Drawing.Point(125, 60);
             this.LocationLabel.Name = "LocationLabel";
             this.LocationLabel.Size = new System.Drawing.Size(27, 15);
             this.LocationLabel.TabIndex = 30;
@@ -148,7 +148,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label22.Location = new System.Drawing.Point(59, 41);
+            this.label22.Location = new System.Drawing.Point(63, 60);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(56, 15);
             this.label22.TabIndex = 29;
@@ -158,7 +158,7 @@
             // 
             this.NameLabel.AutoSize = true;
             this.NameLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.NameLabel.Location = new System.Drawing.Point(118, 17);
+            this.NameLabel.Location = new System.Drawing.Point(125, 36);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(27, 15);
             this.NameLabel.TabIndex = 28;
@@ -168,7 +168,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label24.Location = new System.Drawing.Point(73, 17);
+            this.label24.Location = new System.Drawing.Point(77, 36);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(42, 15);
             this.label24.TabIndex = 27;
@@ -181,7 +181,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
             this.Controls.Add(this.panel2);
             this.Name = "ShopControl";
-            this.Size = new System.Drawing.Size(432, 278);
+            this.Size = new System.Drawing.Size(516, 308);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
