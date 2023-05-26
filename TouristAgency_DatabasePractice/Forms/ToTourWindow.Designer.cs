@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.PayButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.FinalPriceLabel = new System.Windows.Forms.Label();
             this.NumberOfPeopleComboBox = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.SelectedItemsFlowLayoutPanel = new System.Windows.Forms.FlowLayoutPanel();
@@ -80,15 +80,15 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Final price:";
             // 
-            // label3
+            // FinalPriceLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(544, 426);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 25);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "null";
+            this.FinalPriceLabel.AutoSize = true;
+            this.FinalPriceLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.FinalPriceLabel.Location = new System.Drawing.Point(544, 426);
+            this.FinalPriceLabel.Name = "FinalPriceLabel";
+            this.FinalPriceLabel.Size = new System.Drawing.Size(46, 25);
+            this.FinalPriceLabel.TabIndex = 5;
+            this.FinalPriceLabel.Text = "null";
             // 
             // NumberOfPeopleComboBox
             // 
@@ -97,6 +97,7 @@
             this.NumberOfPeopleComboBox.Name = "NumberOfPeopleComboBox";
             this.NumberOfPeopleComboBox.Size = new System.Drawing.Size(110, 23);
             this.NumberOfPeopleComboBox.TabIndex = 6;
+            this.NumberOfPeopleComboBox.SelectedValueChanged += new System.EventHandler(this.NumberOfPeopleComboBox_SelectedValueChanged);
             // 
             // label4
             // 
@@ -110,6 +111,7 @@
             // 
             // SelectedItemsFlowLayoutPanel
             // 
+            this.SelectedItemsFlowLayoutPanel.AutoScroll = true;
             this.SelectedItemsFlowLayoutPanel.Location = new System.Drawing.Point(12, 42);
             this.SelectedItemsFlowLayoutPanel.Name = "SelectedItemsFlowLayoutPanel";
             this.SelectedItemsFlowLayoutPanel.Size = new System.Drawing.Size(843, 365);
@@ -124,7 +126,7 @@
             this.Controls.Add(this.SelectedItemsFlowLayoutPanel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.NumberOfPeopleComboBox);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.FinalPriceLabel);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.PayButton);
             this.Controls.Add(this.label1);
@@ -142,7 +144,7 @@
         private Label label1;
         private Button PayButton;
         private Label label2;
-        private Label label3;
+        private Label FinalPriceLabel;
         private ComboBox NumberOfPeopleComboBox;
         private Label label4;
         private FlowLayoutPanel SelectedItemsFlowLayoutPanel;
