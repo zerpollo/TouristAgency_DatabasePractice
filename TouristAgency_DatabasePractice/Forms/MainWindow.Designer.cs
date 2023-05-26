@@ -30,14 +30,22 @@
         {
             this.TabFrame = new System.Windows.Forms.TabControl();
             this.Shops = new System.Windows.Forms.TabPage();
+            this.ShopPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.Museums = new System.Windows.Forms.TabPage();
+            this.MuseumsPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.Restaraunts = new System.Windows.Forms.TabPage();
+            this.RestarauntsPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.Activities = new System.Windows.Forms.TabPage();
+            this.ActivitiesPanel = new System.Windows.Forms.FlowLayoutPanel();
             this.ToTourButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.AdminButton = new System.Windows.Forms.Button();
             this.DateLabel = new System.Windows.Forms.Label();
             this.TabFrame.SuspendLayout();
+            this.Shops.SuspendLayout();
+            this.Museums.SuspendLayout();
+            this.Restaraunts.SuspendLayout();
+            this.Activities.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabFrame
@@ -46,51 +54,91 @@
             this.TabFrame.Controls.Add(this.Museums);
             this.TabFrame.Controls.Add(this.Restaraunts);
             this.TabFrame.Controls.Add(this.Activities);
+            this.TabFrame.ItemSize = new System.Drawing.Size(500, 20);
             this.TabFrame.Location = new System.Drawing.Point(12, 12);
+            this.TabFrame.Multiline = true;
             this.TabFrame.Name = "TabFrame";
             this.TabFrame.SelectedIndex = 0;
-            this.TabFrame.Size = new System.Drawing.Size(1316, 767);
+            this.TabFrame.Size = new System.Drawing.Size(1338, 767);
+            this.TabFrame.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.TabFrame.TabIndex = 0;
             // 
             // Shops
             // 
+            this.Shops.AutoScroll = true;
+            this.Shops.Controls.Add(this.ShopPanel);
             this.Shops.Location = new System.Drawing.Point(4, 24);
             this.Shops.Name = "Shops";
-            this.Shops.Padding = new System.Windows.Forms.Padding(3);
-            this.Shops.Size = new System.Drawing.Size(1308, 739);
+            this.Shops.Padding = new System.Windows.Forms.Padding(15);
+            this.Shops.Size = new System.Drawing.Size(1330, 739);
             this.Shops.TabIndex = 0;
             this.Shops.Text = "Shops";
             this.Shops.UseVisualStyleBackColor = true;
             // 
+            // ShopPanel
+            // 
+            this.ShopPanel.AutoScroll = true;
+            this.ShopPanel.Location = new System.Drawing.Point(3, 3);
+            this.ShopPanel.Name = "ShopPanel";
+            this.ShopPanel.Size = new System.Drawing.Size(1325, 736);
+            this.ShopPanel.TabIndex = 0;
+            // 
             // Museums
             // 
+            this.Museums.Controls.Add(this.MuseumsPanel);
             this.Museums.Location = new System.Drawing.Point(4, 24);
             this.Museums.Name = "Museums";
             this.Museums.Padding = new System.Windows.Forms.Padding(3);
-            this.Museums.Size = new System.Drawing.Size(1308, 739);
+            this.Museums.Size = new System.Drawing.Size(1330, 739);
             this.Museums.TabIndex = 1;
             this.Museums.Text = "Museums";
             this.Museums.UseVisualStyleBackColor = true;
             // 
+            // MuseumsPanel
+            // 
+            this.MuseumsPanel.AutoScroll = true;
+            this.MuseumsPanel.Location = new System.Drawing.Point(0, 0);
+            this.MuseumsPanel.Name = "MuseumsPanel";
+            this.MuseumsPanel.Size = new System.Drawing.Size(1330, 739);
+            this.MuseumsPanel.TabIndex = 0;
+            // 
             // Restaraunts
             // 
+            this.Restaraunts.Controls.Add(this.RestarauntsPanel);
             this.Restaraunts.Location = new System.Drawing.Point(4, 24);
             this.Restaraunts.Name = "Restaraunts";
             this.Restaraunts.Padding = new System.Windows.Forms.Padding(3);
-            this.Restaraunts.Size = new System.Drawing.Size(1308, 739);
+            this.Restaraunts.Size = new System.Drawing.Size(1330, 739);
             this.Restaraunts.TabIndex = 2;
             this.Restaraunts.Text = "Restaraunts";
             this.Restaraunts.UseVisualStyleBackColor = true;
             // 
+            // RestarauntsPanel
+            // 
+            this.RestarauntsPanel.AutoScroll = true;
+            this.RestarauntsPanel.Location = new System.Drawing.Point(0, 0);
+            this.RestarauntsPanel.Name = "RestarauntsPanel";
+            this.RestarauntsPanel.Size = new System.Drawing.Size(1330, 739);
+            this.RestarauntsPanel.TabIndex = 0;
+            // 
             // Activities
             // 
+            this.Activities.Controls.Add(this.ActivitiesPanel);
             this.Activities.Location = new System.Drawing.Point(4, 24);
             this.Activities.Name = "Activities";
             this.Activities.Padding = new System.Windows.Forms.Padding(3);
-            this.Activities.Size = new System.Drawing.Size(1308, 739);
+            this.Activities.Size = new System.Drawing.Size(1330, 739);
             this.Activities.TabIndex = 3;
             this.Activities.Text = "Activities";
             this.Activities.UseVisualStyleBackColor = true;
+            // 
+            // ActivitiesPanel
+            // 
+            this.ActivitiesPanel.AutoScroll = true;
+            this.ActivitiesPanel.Location = new System.Drawing.Point(0, 0);
+            this.ActivitiesPanel.Name = "ActivitiesPanel";
+            this.ActivitiesPanel.Size = new System.Drawing.Size(1330, 743);
+            this.ActivitiesPanel.TabIndex = 0;
             // 
             // ToTourButton
             // 
@@ -104,7 +152,7 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(1249, 785);
+            this.ExitButton.Location = new System.Drawing.Point(1267, 787);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(75, 23);
             this.ExitButton.TabIndex = 2;
@@ -114,7 +162,7 @@
             // 
             // AdminButton
             // 
-            this.AdminButton.Location = new System.Drawing.Point(1143, 785);
+            this.AdminButton.Location = new System.Drawing.Point(1161, 787);
             this.AdminButton.Name = "AdminButton";
             this.AdminButton.Size = new System.Drawing.Size(100, 23);
             this.AdminButton.TabIndex = 3;
@@ -136,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1340, 820);
+            this.ClientSize = new System.Drawing.Size(1354, 820);
             this.Controls.Add(this.DateLabel);
             this.Controls.Add(this.AdminButton);
             this.Controls.Add(this.ExitButton);
@@ -145,6 +193,10 @@
             this.Name = "MainWindow";
             this.Text = "MainWindow";
             this.TabFrame.ResumeLayout(false);
+            this.Shops.ResumeLayout(false);
+            this.Museums.ResumeLayout(false);
+            this.Restaraunts.ResumeLayout(false);
+            this.Activities.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,5 +213,9 @@
         private Button ExitButton;
         private Button AdminButton;
         private Label DateLabel;
+        private FlowLayoutPanel ShopPanel;
+        private FlowLayoutPanel MuseumsPanel;
+        private FlowLayoutPanel RestarauntsPanel;
+        private FlowLayoutPanel ActivitiesPanel;
     }
 }
