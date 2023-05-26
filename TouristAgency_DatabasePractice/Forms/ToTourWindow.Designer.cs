@@ -41,7 +41,7 @@
             // ReturnButton
             // 
             this.ReturnButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ReturnButton.Location = new System.Drawing.Point(761, 413);
+            this.ReturnButton.Location = new System.Drawing.Point(1017, 413);
             this.ReturnButton.Name = "ReturnButton";
             this.ReturnButton.Size = new System.Drawing.Size(94, 51);
             this.ReturnButton.TabIndex = 0;
@@ -62,7 +62,7 @@
             // PayButton
             // 
             this.PayButton.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.PayButton.Location = new System.Drawing.Point(661, 413);
+            this.PayButton.Location = new System.Drawing.Point(917, 413);
             this.PayButton.Name = "PayButton";
             this.PayButton.Size = new System.Drawing.Size(94, 51);
             this.PayButton.TabIndex = 3;
@@ -74,7 +74,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(422, 421);
+            this.label2.Location = new System.Drawing.Point(517, 421);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(116, 30);
             this.label2.TabIndex = 4;
@@ -84,7 +84,7 @@
             // 
             this.FinalPriceLabel.AutoSize = true;
             this.FinalPriceLabel.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.FinalPriceLabel.Location = new System.Drawing.Point(544, 426);
+            this.FinalPriceLabel.Location = new System.Drawing.Point(639, 426);
             this.FinalPriceLabel.Name = "FinalPriceLabel";
             this.FinalPriceLabel.Size = new System.Drawing.Size(46, 25);
             this.FinalPriceLabel.TabIndex = 5;
@@ -114,7 +114,7 @@
             this.SelectedItemsFlowLayoutPanel.AutoScroll = true;
             this.SelectedItemsFlowLayoutPanel.Location = new System.Drawing.Point(12, 42);
             this.SelectedItemsFlowLayoutPanel.Name = "SelectedItemsFlowLayoutPanel";
-            this.SelectedItemsFlowLayoutPanel.Size = new System.Drawing.Size(843, 365);
+            this.SelectedItemsFlowLayoutPanel.Size = new System.Drawing.Size(1099, 365);
             this.SelectedItemsFlowLayoutPanel.TabIndex = 8;
             // 
             // ToTourWindow
@@ -122,7 +122,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.BurlyWood;
-            this.ClientSize = new System.Drawing.Size(867, 469);
+            this.ClientSize = new System.Drawing.Size(1123, 469);
             this.Controls.Add(this.SelectedItemsFlowLayoutPanel);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.NumberOfPeopleComboBox);
