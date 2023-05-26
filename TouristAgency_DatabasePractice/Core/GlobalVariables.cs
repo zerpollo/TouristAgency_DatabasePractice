@@ -21,6 +21,7 @@ namespace TouristAgency_DatabasePractice.Core
         public static List<Shop> Shops;
         public static List<Activity> Activities;
         public static List<Language> Languages;
+        public static List<DateTimeDB> DateTimes;
 
         // junction tables lists for Times and Languages available
         public static List<LanguageActivities> LanguageActivities;

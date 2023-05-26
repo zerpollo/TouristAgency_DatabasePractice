@@ -59,6 +59,10 @@ namespace TouristAgency_DatabasePractice.Forms
             IEnumerable<Language> ILanguage = await TaskLanguage;
             GlobalVariables.Languages = ILanguage.ToList();
 
+            Task<IEnumerable<DateTimeDB>> TaskDateTime = da.LoadData<DateTimeDB, dynamic>("dbo.GetDateTimesProc", new { });
+            IEnumerable<DateTimeDB> IDateTime = await TaskDateTime;
+            GlobalVariables.DateTimes = IDateTime.ToList();
+
             Task<IEnumerable<Museum>> TaskMuseums = da.LoadData<Museum, dynamic>("dbo.GetMuseumsProc", new { });
             IEnumerable<Museum> IMuseums = await TaskMuseums;
             GlobalVariables.Museums = IMuseums.ToList();
