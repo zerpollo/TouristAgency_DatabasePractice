@@ -36,8 +36,6 @@
             this.OpenTimeLabel = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.AddButton = new System.Windows.Forms.Button();
-            this.PhoneNumberLabel = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
             this.LocationLabel = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.NameLabel = new System.Windows.Forms.Label();
@@ -56,8 +54,6 @@
             this.panel2.Controls.Add(this.OpenTimeLabel);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.AddButton);
-            this.panel2.Controls.Add(this.PhoneNumberLabel);
-            this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.LocationLabel);
             this.panel2.Controls.Add(this.label22);
             this.panel2.Controls.Add(this.NameLabel);
@@ -91,7 +87,7 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label13.Location = new System.Drawing.Point(162, 79);
+            this.label13.Location = new System.Drawing.Point(162, 55);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(22, 30);
             this.label13.TabIndex = 39;
@@ -101,7 +97,7 @@
             // 
             this.CloseTimeLabel.AutoSize = true;
             this.CloseTimeLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.CloseTimeLabel.Location = new System.Drawing.Point(190, 89);
+            this.CloseTimeLabel.Location = new System.Drawing.Point(190, 65);
             this.CloseTimeLabel.Name = "CloseTimeLabel";
             this.CloseTimeLabel.Size = new System.Drawing.Size(27, 15);
             this.CloseTimeLabel.TabIndex = 37;
@@ -111,7 +107,7 @@
             // 
             this.OpenTimeLabel.AutoSize = true;
             this.OpenTimeLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.OpenTimeLabel.Location = new System.Drawing.Point(118, 89);
+            this.OpenTimeLabel.Location = new System.Drawing.Point(118, 65);
             this.OpenTimeLabel.Name = "OpenTimeLabel";
             this.OpenTimeLabel.Size = new System.Drawing.Size(27, 15);
             this.OpenTimeLabel.TabIndex = 36;
@@ -121,7 +117,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label17.Location = new System.Drawing.Point(11, 89);
+            this.label17.Location = new System.Drawing.Point(11, 65);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(106, 15);
             this.label17.TabIndex = 35;
@@ -137,26 +133,6 @@
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
-            // 
-            // PhoneNumberLabel
-            // 
-            this.PhoneNumberLabel.AutoSize = true;
-            this.PhoneNumberLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.PhoneNumberLabel.Location = new System.Drawing.Point(118, 65);
-            this.PhoneNumberLabel.Name = "PhoneNumberLabel";
-            this.PhoneNumberLabel.Size = new System.Drawing.Size(27, 15);
-            this.PhoneNumberLabel.TabIndex = 32;
-            this.PhoneNumberLabel.Text = "null";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label20.Location = new System.Drawing.Point(26, 65);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(89, 15);
-            this.label20.TabIndex = 31;
-            this.label20.Text = "Phone number:";
             // 
             // LocationLabel
             // 
@@ -223,8 +199,6 @@
         private Label OpenTimeLabel;
         private Label label17;
         private Button AddButton;
-        private Label PhoneNumberLabel;
-        private Label label20;
         private Label LocationLabel;
         private Label label22;
         private Label NameLabel;
