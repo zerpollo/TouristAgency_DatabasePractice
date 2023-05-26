@@ -22,7 +22,7 @@ namespace TouristAgency_DatabasePractice.UserControls
 
         public ActivityControl(Activity activity)
         {
-            string FilePath = @"pictures/plaza-de-espana.jpg";
+            string FilePath = "..//..//..//el-gato.jpg";
             // initializing new Control
             InitializeComponent();
             if (File.Exists(FilePath))

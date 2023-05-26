@@ -18,7 +18,7 @@ namespace TouristAgency_DatabasePractice.UserControls
 
         public RestaurantControl(Restaraunt restaraunt)
         {
-            string FilePath = @"pictures/plaza-de-espana.jpg";
+            string FilePath = "..//..//..//el-gato.jpg";
             // initializing new Control
             InitializeComponent();
             if (File.Exists(FilePath))
