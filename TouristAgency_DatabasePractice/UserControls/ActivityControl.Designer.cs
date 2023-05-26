@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
+            this.LanguageComboBox = new System.Windows.Forms.ComboBox();
+            this.DateTimeComboBox = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.DurationLabel = new System.Windows.Forms.Label();
             this.labell = new System.Windows.Forms.Label();
             this.DescriptionTextBox = new System.Windows.Forms.TextBox();
@@ -41,9 +44,6 @@
             this.label22 = new System.Windows.Forms.Label();
             this.NameLabel = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.DateTimeComboBox = new System.Windows.Forms.ComboBox();
-            this.LanguageComboBox = new System.Windows.Forms.ComboBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,32 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(504, 293);
             this.panel2.TabIndex = 29;
+            // 
+            // LanguageComboBox
+            // 
+            this.LanguageComboBox.FormattingEnabled = true;
+            this.LanguageComboBox.Location = new System.Drawing.Point(366, 132);
+            this.LanguageComboBox.Name = "LanguageComboBox";
+            this.LanguageComboBox.Size = new System.Drawing.Size(127, 23);
+            this.LanguageComboBox.TabIndex = 45;
+            // 
+            // DateTimeComboBox
+            // 
+            this.DateTimeComboBox.FormattingEnabled = true;
+            this.DateTimeComboBox.Location = new System.Drawing.Point(134, 132);
+            this.DateTimeComboBox.Name = "DateTimeComboBox";
+            this.DateTimeComboBox.Size = new System.Drawing.Size(127, 23);
+            this.DateTimeComboBox.TabIndex = 44;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(267, 135);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(93, 15);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "Select language:";
             // 
             // DurationLabel
             // 
@@ -149,6 +175,7 @@
             this.AddButton.TabIndex = 33;
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = false;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // LocationLabel
             // 
@@ -189,32 +216,6 @@
             this.label24.Size = new System.Drawing.Size(42, 15);
             this.label24.TabIndex = 27;
             this.label24.Text = "Name:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(267, 135);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 15);
-            this.label1.TabIndex = 43;
-            this.label1.Text = "Select language:";
-            // 
-            // DateTimeComboBox
-            // 
-            this.DateTimeComboBox.FormattingEnabled = true;
-            this.DateTimeComboBox.Location = new System.Drawing.Point(134, 132);
-            this.DateTimeComboBox.Name = "DateTimeComboBox";
-            this.DateTimeComboBox.Size = new System.Drawing.Size(127, 23);
-            this.DateTimeComboBox.TabIndex = 44;
-            // 
-            // LanguageComboBox
-            // 
-            this.LanguageComboBox.FormattingEnabled = true;
-            this.LanguageComboBox.Location = new System.Drawing.Point(366, 132);
-            this.LanguageComboBox.Name = "LanguageComboBox";
-            this.LanguageComboBox.Size = new System.Drawing.Size(127, 23);
-            this.LanguageComboBox.TabIndex = 45;
             // 
             // ActivityControl
             // 

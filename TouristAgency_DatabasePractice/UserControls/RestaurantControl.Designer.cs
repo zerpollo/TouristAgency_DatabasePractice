@@ -32,11 +32,9 @@
             this.DescriptionTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.PriceLabel = new System.Windows.Forms.Label();
             this.CloseTimeLabel = new System.Windows.Forms.Label();
             this.OpenTimeLabel = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.AddButton = new System.Windows.Forms.Button();
             this.PhoneNumberLabel = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -54,11 +52,9 @@
             this.panel2.Controls.Add(this.DescriptionTextBox);
             this.panel2.Controls.Add(this.pictureBox);
             this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.PriceLabel);
             this.panel2.Controls.Add(this.CloseTimeLabel);
             this.panel2.Controls.Add(this.OpenTimeLabel);
             this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.AddButton);
             this.panel2.Controls.Add(this.PhoneNumberLabel);
             this.panel2.Controls.Add(this.label20);
@@ -95,27 +91,17 @@
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label13.Location = new System.Drawing.Point(162, 105);
+            this.label13.Location = new System.Drawing.Point(163, 85);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(22, 30);
             this.label13.TabIndex = 39;
             this.label13.Text = "-";
             // 
-            // PriceLabel
-            // 
-            this.PriceLabel.AutoSize = true;
-            this.PriceLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.PriceLabel.Location = new System.Drawing.Point(118, 90);
-            this.PriceLabel.Name = "PriceLabel";
-            this.PriceLabel.Size = new System.Drawing.Size(27, 15);
-            this.PriceLabel.TabIndex = 38;
-            this.PriceLabel.Text = "null";
-            // 
             // CloseTimeLabel
             // 
             this.CloseTimeLabel.AutoSize = true;
             this.CloseTimeLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.CloseTimeLabel.Location = new System.Drawing.Point(190, 115);
+            this.CloseTimeLabel.Location = new System.Drawing.Point(191, 95);
             this.CloseTimeLabel.Name = "CloseTimeLabel";
             this.CloseTimeLabel.Size = new System.Drawing.Size(27, 15);
             this.CloseTimeLabel.TabIndex = 37;
@@ -125,7 +111,7 @@
             // 
             this.OpenTimeLabel.AutoSize = true;
             this.OpenTimeLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.OpenTimeLabel.Location = new System.Drawing.Point(118, 115);
+            this.OpenTimeLabel.Location = new System.Drawing.Point(119, 95);
             this.OpenTimeLabel.Name = "OpenTimeLabel";
             this.OpenTimeLabel.Size = new System.Drawing.Size(27, 15);
             this.OpenTimeLabel.TabIndex = 36;
@@ -135,21 +121,11 @@
             // 
             this.label17.AutoSize = true;
             this.label17.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label17.Location = new System.Drawing.Point(11, 115);
+            this.label17.Location = new System.Drawing.Point(12, 95);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(106, 15);
             this.label17.TabIndex = 35;
             this.label17.Text = "Open - Close time:";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label18.Location = new System.Drawing.Point(79, 90);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(36, 15);
-            this.label18.TabIndex = 34;
-            this.label18.Text = "Price:";
             // 
             // AddButton
             // 
@@ -160,6 +136,7 @@
             this.AddButton.TabIndex = 33;
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = false;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // PhoneNumberLabel
             // 
@@ -241,11 +218,9 @@
         private Panel panel2;
         private PictureBox pictureBox;
         private Label label13;
-        private Label PriceLabel;
         private Label CloseTimeLabel;
         private Label OpenTimeLabel;
         private Label label17;
-        private Label label18;
         private Button AddButton;
         private Label PhoneNumberLabel;
         private Label label20;
