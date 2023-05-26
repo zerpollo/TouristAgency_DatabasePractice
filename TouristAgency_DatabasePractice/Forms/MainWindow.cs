@@ -23,6 +23,8 @@ namespace TouristAgency_DatabasePractice.Forms
         {
             InitializeComponent();
             DateLabel.Text = "Welcome, today is: " + DateTime.Today.ToShortDateString();
+
+            //getting info from db and creating controls in flow panels
             GetGlobalVariablesFromDB();
         }
 
