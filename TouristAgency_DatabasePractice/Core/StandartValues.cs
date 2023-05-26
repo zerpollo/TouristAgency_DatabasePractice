@@ -25,5 +25,14 @@ namespace TouristAgency_DatabasePractice.Core
              new TimeSpan(20,0,0),
         };
 
+        public static List<int> NumberOfPeople = new List<int>()
+        {
+            1,
+            2,
+            3,
+            4,
+            5
+        };
+
     }
 }

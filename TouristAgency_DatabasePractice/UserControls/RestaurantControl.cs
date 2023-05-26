@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TouristAgency_DatabasePractice.Core;
 
 namespace TouristAgency_DatabasePractice.UserControls
 {
@@ -38,7 +39,9 @@ namespace TouristAgency_DatabasePractice.UserControls
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-
+            GlobalVariables.SelectedRestaraunts.Add(Restaraunt);
+            AddButton.Text = "Added";
+            AddButton.Enabled = false;
         }
     }
 }
