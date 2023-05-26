@@ -6,25 +6,26 @@ using System.Threading.Tasks;
 
 namespace TouristAgency_DatabasePractice.ModelClasses.Junction
 {
-    public class LanguageActivities
+    public class ToursActivities
     {
         private int id;
-        private int languageID;
+        private int tourID;
         private int activityID;
 
         public int ID { get => id; set => id = value; }
-        public int LanguageID { get => languageID; set => languageID = value; }
+        public int TourID { get => tourID; set => tourID = value; }
         public int ActivityID { get => activityID; set => activityID = value; }
 
-        public LanguageActivities(int languageID, int activityID)
+        public ToursActivities(int tourID, int activityID)
         {
-            this.languageID = languageID;
+            this.tourID = tourID;
             this.activityID = activityID;
         }
 
-        public LanguageActivities()
+        public ToursActivities()
         {
 
         }
+
     }
 }
