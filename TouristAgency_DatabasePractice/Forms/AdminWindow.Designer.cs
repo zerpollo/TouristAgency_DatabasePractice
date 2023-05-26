@@ -35,6 +35,7 @@
             this.AddLanguageButton = new System.Windows.Forms.Button();
             this.AddLangToActButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
+            this.AddDateTimeButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AddShopButton
@@ -107,11 +108,22 @@
             this.ExitButton.UseVisualStyleBackColor = true;
             this.ExitButton.Click += new System.EventHandler(this.ExitButton_Click);
             // 
+            // AddDateTimeButton
+            // 
+            this.AddDateTimeButton.Location = new System.Drawing.Point(12, 270);
+            this.AddDateTimeButton.Name = "AddDateTimeButton";
+            this.AddDateTimeButton.Size = new System.Drawing.Size(168, 23);
+            this.AddDateTimeButton.TabIndex = 7;
+            this.AddDateTimeButton.Text = "Add new time";
+            this.AddDateTimeButton.UseVisualStyleBackColor = true;
+            this.AddDateTimeButton.Click += new System.EventHandler(this.AddDateTimeButton_Click);
+            // 
             // AdminWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(192, 475);
+            this.Controls.Add(this.AddDateTimeButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.AddLangToActButton);
             this.Controls.Add(this.AddLanguageButton);
@@ -134,5 +146,6 @@
         private Button AddLanguageButton;
         private Button AddLangToActButton;
         private Button ExitButton;
+        private Button AddDateTimeButton;
     }
 }

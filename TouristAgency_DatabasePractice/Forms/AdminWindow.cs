@@ -58,5 +58,11 @@ namespace TouristAgency_DatabasePractice.Forms
             NewMuseumWindow newMuseumWindow = new NewMuseumWindow();
             newMuseumWindow.ShowDialog();
         }
+
+        private void AddDateTimeButton_Click(object sender, EventArgs e)
+        {
+            NewDateTimeWindow newDateTimeWindow = new NewDateTimeWindow();
+            newDateTimeWindow.ShowDialog();
+        }
     }
 }
