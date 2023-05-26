@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.panel2 = new System.Windows.Forms.Panel();
-            this.DescriptionTextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.DescriptionTextBox = new System.Windows.Forms.TextBox();
             this.CloseTimeLabel = new System.Windows.Forms.Label();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.OpenTimeLabel = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.AddButton = new System.Windows.Forms.Button();
+            this.label17 = new System.Windows.Forms.Label();
             this.PhoneNumberLabel = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.LocationLabel = new System.Windows.Forms.Label();
@@ -49,13 +49,13 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.BurlyWood;
-            this.panel2.Controls.Add(this.DescriptionTextBox);
-            this.panel2.Controls.Add(this.pictureBox);
             this.panel2.Controls.Add(this.label13);
+            this.panel2.Controls.Add(this.DescriptionTextBox);
             this.panel2.Controls.Add(this.CloseTimeLabel);
+            this.panel2.Controls.Add(this.pictureBox);
             this.panel2.Controls.Add(this.OpenTimeLabel);
-            this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.AddButton);
+            this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.PhoneNumberLabel);
             this.panel2.Controls.Add(this.label20);
             this.panel2.Controls.Add(this.LocationLabel);
@@ -64,8 +64,19 @@
             this.panel2.Controls.Add(this.label24);
             this.panel2.Location = new System.Drawing.Point(5, 6);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(421, 273);
+            this.panel2.Size = new System.Drawing.Size(505, 296);
             this.panel2.TabIndex = 28;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label13.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label13.Location = new System.Drawing.Point(193, 80);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(22, 30);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "-";
             // 
             // DescriptionTextBox
             // 
@@ -74,69 +85,61 @@
             this.DescriptionTextBox.Multiline = true;
             this.DescriptionTextBox.Name = "DescriptionTextBox";
             this.DescriptionTextBox.ReadOnly = true;
-            this.DescriptionTextBox.Size = new System.Drawing.Size(392, 80);
+            this.DescriptionTextBox.Size = new System.Drawing.Size(484, 80);
             this.DescriptionTextBox.TabIndex = 40;
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pictureBox.Location = new System.Drawing.Point(295, 17);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(108, 108);
-            this.pictureBox.TabIndex = 25;
-            this.pictureBox.TabStop = false;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label13.Location = new System.Drawing.Point(163, 85);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(22, 30);
-            this.label13.TabIndex = 39;
-            this.label13.Text = "-";
             // 
             // CloseTimeLabel
             // 
             this.CloseTimeLabel.AutoSize = true;
             this.CloseTimeLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.CloseTimeLabel.Location = new System.Drawing.Point(191, 95);
+            this.CloseTimeLabel.Location = new System.Drawing.Point(218, 91);
             this.CloseTimeLabel.Name = "CloseTimeLabel";
             this.CloseTimeLabel.Size = new System.Drawing.Size(27, 15);
-            this.CloseTimeLabel.TabIndex = 37;
+            this.CloseTimeLabel.TabIndex = 42;
             this.CloseTimeLabel.Text = "null";
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox.InitialImage = null;
+            this.pictureBox.Location = new System.Drawing.Point(387, 17);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(108, 108);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 25;
+            this.pictureBox.TabStop = false;
             // 
             // OpenTimeLabel
             // 
             this.OpenTimeLabel.AutoSize = true;
             this.OpenTimeLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.OpenTimeLabel.Location = new System.Drawing.Point(119, 95);
+            this.OpenTimeLabel.Location = new System.Drawing.Point(141, 91);
             this.OpenTimeLabel.Name = "OpenTimeLabel";
             this.OpenTimeLabel.Size = new System.Drawing.Size(27, 15);
-            this.OpenTimeLabel.TabIndex = 36;
+            this.OpenTimeLabel.TabIndex = 41;
             this.OpenTimeLabel.Text = "null";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label17.Location = new System.Drawing.Point(12, 95);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(106, 15);
-            this.label17.TabIndex = 35;
-            this.label17.Text = "Open - Close time:";
             // 
             // AddButton
             // 
             this.AddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.AddButton.Location = new System.Drawing.Point(162, 224);
+            this.AddButton.Location = new System.Drawing.Point(209, 224);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(97, 39);
             this.AddButton.TabIndex = 33;
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = false;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label17.Location = new System.Drawing.Point(26, 91);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(106, 15);
+            this.label17.TabIndex = 40;
+            this.label17.Text = "Open - Close time:";
             // 
             // PhoneNumberLabel
             // 
@@ -205,7 +208,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(240)))), ((int)(((byte)(196)))));
             this.Controls.Add(this.panel2);
             this.Name = "RestaurantControl";
-            this.Size = new System.Drawing.Size(432, 286);
+            this.Size = new System.Drawing.Size(516, 308);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
@@ -217,10 +220,6 @@
 
         private Panel panel2;
         private PictureBox pictureBox;
-        private Label label13;
-        private Label CloseTimeLabel;
-        private Label OpenTimeLabel;
-        private Label label17;
         private Button AddButton;
         private Label PhoneNumberLabel;
         private Label label20;
@@ -229,5 +228,9 @@
         private Label NameLabel;
         private Label label24;
         private TextBox DescriptionTextBox;
+        private Label label13;
+        private Label CloseTimeLabel;
+        private Label OpenTimeLabel;
+        private Label label17;
     }
 }

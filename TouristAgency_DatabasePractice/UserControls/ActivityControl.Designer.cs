@@ -68,7 +68,7 @@
             this.panel2.Controls.Add(this.label24);
             this.panel2.Location = new System.Drawing.Point(5, 7);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(504, 293);
+            this.panel2.Size = new System.Drawing.Size(506, 296);
             this.panel2.TabIndex = 29;
             // 
             // LanguageComboBox
@@ -101,7 +101,7 @@
             // 
             this.DurationLabel.AutoSize = true;
             this.DurationLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.DurationLabel.Location = new System.Drawing.Point(315, 72);
+            this.DurationLabel.Location = new System.Drawing.Point(66, 73);
             this.DurationLabel.Name = "DurationLabel";
             this.DurationLabel.Size = new System.Drawing.Size(27, 15);
             this.DurationLabel.TabIndex = 42;
@@ -111,7 +111,7 @@
             // 
             this.labell.AutoSize = true;
             this.labell.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.labell.Location = new System.Drawing.Point(257, 72);
+            this.labell.Location = new System.Drawing.Point(8, 73);
             this.labell.Name = "labell";
             this.labell.Size = new System.Drawing.Size(56, 15);
             this.labell.TabIndex = 41;
@@ -140,7 +140,7 @@
             // 
             this.PriceLabel.AutoSize = true;
             this.PriceLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.PriceLabel.Location = new System.Drawing.Point(315, 25);
+            this.PriceLabel.Location = new System.Drawing.Point(66, 97);
             this.PriceLabel.Name = "PriceLabel";
             this.PriceLabel.Size = new System.Drawing.Size(27, 15);
             this.PriceLabel.TabIndex = 38;
@@ -160,7 +160,7 @@
             // 
             this.label18.AutoSize = true;
             this.label18.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label18.Location = new System.Drawing.Point(277, 25);
+            this.label18.Location = new System.Drawing.Point(28, 97);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(36, 15);
             this.label18.TabIndex = 34;
@@ -169,7 +169,7 @@
             // AddButton
             // 
             this.AddButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.AddButton.Location = new System.Drawing.Point(216, 247);
+            this.AddButton.Location = new System.Drawing.Point(214, 247);
             this.AddButton.Name = "AddButton";
             this.AddButton.Size = new System.Drawing.Size(97, 39);
             this.AddButton.TabIndex = 33;
@@ -181,7 +181,7 @@
             // 
             this.LocationLabel.AutoSize = true;
             this.LocationLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LocationLabel.Location = new System.Drawing.Point(64, 75);
+            this.LocationLabel.Location = new System.Drawing.Point(66, 49);
             this.LocationLabel.Name = "LocationLabel";
             this.LocationLabel.Size = new System.Drawing.Size(27, 15);
             this.LocationLabel.TabIndex = 30;
@@ -191,7 +191,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label22.Location = new System.Drawing.Point(6, 75);
+            this.label22.Location = new System.Drawing.Point(8, 49);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(56, 15);
             this.label22.TabIndex = 29;
@@ -201,7 +201,7 @@
             // 
             this.NameLabel.AutoSize = true;
             this.NameLabel.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.NameLabel.Location = new System.Drawing.Point(64, 25);
+            this.NameLabel.Location = new System.Drawing.Point(66, 24);
             this.NameLabel.Name = "NameLabel";
             this.NameLabel.Size = new System.Drawing.Size(27, 15);
             this.NameLabel.TabIndex = 28;
@@ -211,7 +211,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label24.Location = new System.Drawing.Point(20, 25);
+            this.label24.Location = new System.Drawing.Point(22, 24);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(42, 15);
             this.label24.TabIndex = 27;

@@ -99,5 +99,10 @@ namespace TouristAgency_DatabasePractice.Forms
                 ActivitiesPanel.Controls.Add(new ActivityControl(act));
             }
         }
+
+        private void MainWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
