@@ -47,12 +47,15 @@ namespace TouristAgency_DatabasePractice.Forms
         private void ToTourButton_Click(object sender, EventArgs e)
         {
             ToTourWindow toTourWindow = new ToTourWindow();
-            Hide();
             toTourWindow.ShowDialog();
         }
         public async void GetGlobalVariablesFromDB()
         {
             DataAccess da = new DataAccess();
+
+            Task<IEnumerable<Language>> TaskLanguage = da.LoadData<Language, dynamic>("dbo.GetLanguagesProc", new { });
+            IEnumerable<Language> ILanguage = await TaskLanguage;
+            GlobalVariables.Languages = ILanguage.ToList();
 
             Task<IEnumerable<Museum>> TaskMuseums = da.LoadData<Museum, dynamic>("dbo.GetMuseumsProc", new { });
             IEnumerable<Museum> IMuseums = await TaskMuseums;
