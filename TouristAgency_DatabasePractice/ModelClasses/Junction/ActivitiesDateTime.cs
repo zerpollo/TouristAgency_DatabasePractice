@@ -16,9 +16,8 @@ namespace TouristAgency_DatabasePractice.ModelClasses.Junction
         public int DateTimeID { get => dateTimeID; set => dateTimeID = value; }
         public int ActivityID { get => activityID; set => activityID = value; }
 
-        public ActivitiesDateTime(int id, int dateTimeID, int activityID)
+        public ActivitiesDateTime(int dateTimeID, int activityID)
         {
-            this.id = id;
             this.dateTimeID = dateTimeID;
             this.activityID = activityID;
         }

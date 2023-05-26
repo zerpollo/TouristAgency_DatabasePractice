@@ -16,9 +16,8 @@ namespace TouristAgency_DatabasePractice.ModelClasses.Junction
         public int LanguageID { get => languageID; set => languageID = value; }
         public int ActivityID { get => activityID; set => activityID = value; }
 
-        public LanguageActivities(int id, int languageID, int activityID)
+        public LanguageActivities(int languageID, int activityID)
         {
-            this.id = id;
             this.languageID = languageID;
             this.activityID = activityID;
         }
