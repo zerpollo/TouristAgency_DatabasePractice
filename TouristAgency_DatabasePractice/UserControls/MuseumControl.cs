@@ -17,7 +17,17 @@ namespace TouristAgency_DatabasePractice.UserControls
         public Museum Museum;
         public MuseumControl(Museum museum)
         {
+            string FilePath = @"pictures/plaza-de-espana.jpg";
+            // initializing new Control
             InitializeComponent();
+            if (File.Exists(FilePath))
+            {
+                pictureBox.Image = Image.FromFile(FilePath);
+            }
+            else
+            {
+                MessageBox.Show("Not found");
+            }
             this.Museum = museum;
             NameLabel.Text = museum.Name;
             LocationLabel.Text = museum.Location;

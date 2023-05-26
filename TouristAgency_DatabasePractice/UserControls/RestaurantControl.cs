@@ -18,11 +18,12 @@ namespace TouristAgency_DatabasePractice.UserControls
 
         public RestaurantControl(Restaraunt restaraunt)
         {
-            string FilePath = "C:\\Users\\zerpollo-PC\\source\\repos\\TouristAgency_DatabasePractice\\TouristAgency_DatabasePractice\\sample.bmp";
+            string FilePath = @"pictures/plaza-de-espana.jpg";
+            // initializing new Control
             InitializeComponent();
             if (File.Exists(FilePath))
             {
-                    pictureBox.Image = new Bitmap(FilePath);
+                pictureBox.Image = Image.FromFile(FilePath);
             }
             else
             {

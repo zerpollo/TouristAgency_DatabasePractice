@@ -21,8 +21,17 @@ namespace TouristAgency_DatabasePractice.UserControls
 
         public ActivityControl(Activity activity)
         {
-            InitializeComponent();
+            string FilePath = @"pictures/plaza-de-espana.jpg";
             // initializing new Control
+            InitializeComponent();
+            if (File.Exists(FilePath))
+            {
+                pictureBox.Image = Image.FromFile(FilePath);
+            }
+            else
+            {
+                MessageBox.Show("Not found");
+            }
             ActivityModel = activity;
             NameLabel.Text = activity.Name;
             LocationLabel.Text = activity.Location;

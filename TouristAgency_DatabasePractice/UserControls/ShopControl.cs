@@ -17,7 +17,17 @@ namespace TouristAgency_DatabasePractice.UserControls
         public Shop Shop;
         public ShopControl(Shop shop)
         {
+            string FilePath = @"pictures/plaza-de-espana.jpg";
+            // initializing new Control
             InitializeComponent();
+            if (File.Exists(FilePath))
+            {
+                pictureBox.Image = Image.FromFile(FilePath);
+            }
+            else
+            {
+                MessageBox.Show("Not found");
+            }
             Shop = shop;
             NameLabel.Text = shop.Name;
             LocationLabel.Text = shop.Location;
