@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TouristAgency_DatabasePractice.Core;
 
 namespace TouristAgency_DatabasePractice.UserControls
 {
@@ -23,12 +24,13 @@ namespace TouristAgency_DatabasePractice.UserControls
             OpenTimeLabel.Text = shop.OpenTime.ToString();
             CloseTimeLabel.Text = shop.CloseTime.ToString();
             DescriptionTextBox.Text = shop.Description;
-            
         }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-
+            GlobalVariables.SelectedShops.Add(Shop);
+            AddButton.Text = "Added";
+            AddButton.Enabled = false;
         }
     }
 }

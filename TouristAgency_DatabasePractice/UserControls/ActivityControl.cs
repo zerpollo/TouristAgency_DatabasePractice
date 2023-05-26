@@ -8,12 +8,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TouristAgency_DatabasePractice.Core;
+using TouristAgency_DatabasePractice.ModelClasses.Junction;
 
 namespace TouristAgency_DatabasePractice.UserControls
 {
     public partial class ActivityControl : UserControl
     {
         public Activity ActivityModel;
+
+        private List<Language> availableLanguages = new List<Language>();
+
         public ActivityControl(Activity activity)
         {
             InitializeComponent();
@@ -25,13 +30,24 @@ namespace TouristAgency_DatabasePractice.UserControls
             DurationLabel.Text = activity.Duration.ToString();
             DescriptionTextBox.Text = activity.Description;
 
-            // fill drop downs
+           // availableLanguages = GlobalVariables.Languages.Where<>
+           List<LanguageActivities> tempLang = GlobalVariables.LanguageActivities.Where(activitylang => activitylang.ActivityID == activity.ID).ToList();
 
-        }
+           var IenumLanguages = from al in tempLang join lang in GlobalVariables.Languages on al.LanguageID equals lang.ID where al.ActivityID == activity.ID select lang;
+
+           availableLanguages = IenumLanguages.ToList();
+
+
+            // fill drop downs
+            LanguageComboBox.DataSource = availableLanguages;
+            LanguageComboBox.DisplayMember = "Name";
+    }
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-
+            GlobalVariables.SelectedActivities.Add(ActivityModel);
+            AddButton.Text = "Added";
+            AddButton.Enabled = false;
         }
     }
 }
