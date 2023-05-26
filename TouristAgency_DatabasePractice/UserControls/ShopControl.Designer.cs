@@ -136,6 +136,7 @@
             this.AddButton.TabIndex = 33;
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = false;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // PhoneNumberLabel
             // 
