@@ -38,7 +38,7 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
                 res.CloseTime = (TimeSpan)CloseTimeComboBox.SelectedItem;
                 res.OpenTime = (TimeSpan)OpenTimeComboBox.SelectedItem;
                 res.Description = DescriptionTextBox.Text;
-                await da.SaveData("dbo.InsertNewRestaurantProc", new { res.Name, res.Location, res.OpenTime, res.CloseTime, res.PhoneNumber, res.Description });
+                await da.SaveData("dbo.InsertNewRestaurantProc", new { res.Name, res.PhoneNumber, res.Location, res.OpenTime, res.CloseTime, res.Description });
             }
             catch (Exception exc)
             {
