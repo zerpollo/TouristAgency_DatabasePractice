@@ -15,6 +15,7 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
     public partial class DeleteRestaurantWindow : Form
     {
         private int SelectedID { get; set; }
+        private List<Restaraunt> restaraunts;
         public DeleteRestaurantWindow()
         {
             InitializeComponent();
@@ -24,9 +25,9 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
         {
             try
             {
-                Restaraunt restaraunt = new Restaraunt();
+                Restaraunt restaraunt;
                 SelectedID = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
-                restaraunt.ID = SelectedID;
+                restaraunt = restaraunts.Where(x => x.ID == SelectedID).FirstOrDefault();
                 DataAccess da = new DataAccess();
                 await da.SaveData("dbo.DeleteRestaurantProc", new { restaraunt.ID });
             }
@@ -43,6 +44,7 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
             DataAccess da = new DataAccess();
             Task<IEnumerable<Restaraunt>> TaskRestaraunt = da.LoadData<Restaraunt, dynamic>("dbo.GetRestaurantsProc", new { });
             IEnumerable<Restaraunt> IRestaraunts = await TaskRestaraunt;
+            restaraunts = IRestaraunts.ToList();
             DataTable dtrestaurant = new DataTable();
             dtrestaurant.Columns.Add("ID", typeof(int));
             dtrestaurant.Columns.Add("Name", typeof(string));

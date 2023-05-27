@@ -9,12 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
 {
     public partial class DeleteMuseumWindow : Form
     {
         private int SelectedID { get; set; }
+        private List<Museum> museums;
         public DeleteMuseumWindow()
         {
             InitializeComponent();
@@ -24,9 +26,9 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
         {
             try
             {
-                Museum museum = new Museum();
+                Museum museum;
                 SelectedID = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
-                museum.ID = SelectedID;
+                museum = museums.Where(x => x.ID == SelectedID).FirstOrDefault();
                 DataAccess da = new DataAccess();
                 await da.SaveData("dbo.DeleteMuseumProc", new { museum.ID });
             }
@@ -43,6 +45,7 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
             DataAccess da = new DataAccess();
             Task<IEnumerable<Museum>> TaskMuseums = da.LoadData<Museum, dynamic>("dbo.GetMuseumsProc", new { });
             IEnumerable<Museum> IMuseums = await TaskMuseums;
+            museums = IMuseums.ToList();
             DataTable dtmuseum = new DataTable();
             dtmuseum.Columns.Add("ID", typeof(int));
             dtmuseum.Columns.Add("Name", typeof(string));

@@ -16,6 +16,7 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
     public partial class DeleteShopWindow : Form
     {
         private int SelectedID { get; set; }
+        private List<Shop> shops;
         public  DeleteShopWindow()
         {
             InitializeComponent();
@@ -26,9 +27,9 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
         {
             try
             {
-                Shop shop = new Shop();
+                Shop shop;
                 SelectedID = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
-                shop.ID = SelectedID;
+                shop = shops.Where(x => x.ID == SelectedID).FirstOrDefault();
                 DataAccess da = new DataAccess();
                 await da.SaveData("dbo.DeleteShopProc", new { shop.ID });
             }
@@ -46,6 +47,7 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
             DataAccess da = new DataAccess();
             Task<IEnumerable<Shop>> TaskShops = da.LoadData<Shop, dynamic>("dbo.GetShopsProc", new { });
             IEnumerable<Shop> IShop = await TaskShops;
+            shops = IShop.ToList();
             DataTable dtshop = new DataTable();
             dtshop.Columns.Add("ID", typeof(int));
             dtshop.Columns.Add("Name", typeof(string));

@@ -9,12 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
 {
     public partial class DeleteActivityWindow : Form
     {
         private int SelectedID { get; set; }
+        private List<Activity> activities;
         public DeleteActivityWindow()
         {
             InitializeComponent();
@@ -26,7 +28,7 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
             {
                 Activity activity = new Activity();
                 SelectedID = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
-                activity.ID = SelectedID;
+                activity = activities.Where(x => x.ID == SelectedID).FirstOrDefault();
                 DataAccess da = new DataAccess();
                 await da.SaveData("dbo.DeleteActivityProc", new { activity.ID });
             }
@@ -43,6 +45,7 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
             DataAccess da = new DataAccess();
             Task<IEnumerable<Activity>> TaskActivity = da.LoadData<Activity, dynamic>("dbo.GetActivitiesProc", new { });
             IEnumerable<Activity> IActivity = await TaskActivity;
+            activities = IActivity.ToList();
             DataTable dtactivity = new DataTable();
             dtactivity.Columns.Add("ID", typeof(int));
             dtactivity.Columns.Add("Name", typeof(string));
