@@ -36,6 +36,10 @@
             this.AddLangToActButton = new System.Windows.Forms.Button();
             this.ExitButton = new System.Windows.Forms.Button();
             this.AddDateTimeButton = new System.Windows.Forms.Button();
+            this.DeleteShopButton = new System.Windows.Forms.Button();
+            this.DeleteRestaurantButton = new System.Windows.Forms.Button();
+            this.DeleteMuseumButton = new System.Windows.Forms.Button();
+            this.DeleteActivityButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // AddShopButton
@@ -50,7 +54,7 @@
             // 
             // AddRestarauntButton
             // 
-            this.AddRestarauntButton.Location = new System.Drawing.Point(12, 53);
+            this.AddRestarauntButton.Location = new System.Drawing.Point(12, 41);
             this.AddRestarauntButton.Name = "AddRestarauntButton";
             this.AddRestarauntButton.Size = new System.Drawing.Size(166, 23);
             this.AddRestarauntButton.TabIndex = 1;
@@ -60,7 +64,7 @@
             // 
             // AddMuseumButton
             // 
-            this.AddMuseumButton.Location = new System.Drawing.Point(12, 96);
+            this.AddMuseumButton.Location = new System.Drawing.Point(12, 70);
             this.AddMuseumButton.Name = "AddMuseumButton";
             this.AddMuseumButton.Size = new System.Drawing.Size(166, 23);
             this.AddMuseumButton.TabIndex = 2;
@@ -70,7 +74,7 @@
             // 
             // AddActivityButton
             // 
-            this.AddActivityButton.Location = new System.Drawing.Point(12, 140);
+            this.AddActivityButton.Location = new System.Drawing.Point(12, 99);
             this.AddActivityButton.Name = "AddActivityButton";
             this.AddActivityButton.Size = new System.Drawing.Size(166, 23);
             this.AddActivityButton.TabIndex = 3;
@@ -80,7 +84,7 @@
             // 
             // AddLanguageButton
             // 
-            this.AddLanguageButton.Location = new System.Drawing.Point(12, 183);
+            this.AddLanguageButton.Location = new System.Drawing.Point(12, 128);
             this.AddLanguageButton.Name = "AddLanguageButton";
             this.AddLanguageButton.Size = new System.Drawing.Size(166, 23);
             this.AddLanguageButton.TabIndex = 4;
@@ -90,7 +94,7 @@
             // 
             // AddLangToActButton
             // 
-            this.AddLangToActButton.Location = new System.Drawing.Point(12, 232);
+            this.AddLangToActButton.Location = new System.Drawing.Point(12, 157);
             this.AddLangToActButton.Name = "AddLangToActButton";
             this.AddLangToActButton.Size = new System.Drawing.Size(166, 23);
             this.AddLangToActButton.TabIndex = 5;
@@ -100,7 +104,7 @@
             // 
             // ExitButton
             // 
-            this.ExitButton.Location = new System.Drawing.Point(12, 440);
+            this.ExitButton.Location = new System.Drawing.Point(12, 392);
             this.ExitButton.Name = "ExitButton";
             this.ExitButton.Size = new System.Drawing.Size(166, 23);
             this.ExitButton.TabIndex = 6;
@@ -110,19 +114,63 @@
             // 
             // AddDateTimeButton
             // 
-            this.AddDateTimeButton.Location = new System.Drawing.Point(12, 270);
+            this.AddDateTimeButton.Location = new System.Drawing.Point(12, 186);
             this.AddDateTimeButton.Name = "AddDateTimeButton";
-            this.AddDateTimeButton.Size = new System.Drawing.Size(168, 23);
+            this.AddDateTimeButton.Size = new System.Drawing.Size(166, 23);
             this.AddDateTimeButton.TabIndex = 7;
             this.AddDateTimeButton.Text = "Add new time";
             this.AddDateTimeButton.UseVisualStyleBackColor = true;
             this.AddDateTimeButton.Click += new System.EventHandler(this.AddDateTimeButton_Click);
             // 
+            // DeleteShopButton
+            // 
+            this.DeleteShopButton.Location = new System.Drawing.Point(12, 231);
+            this.DeleteShopButton.Name = "DeleteShopButton";
+            this.DeleteShopButton.Size = new System.Drawing.Size(166, 23);
+            this.DeleteShopButton.TabIndex = 8;
+            this.DeleteShopButton.Text = "Delete Shop";
+            this.DeleteShopButton.UseVisualStyleBackColor = true;
+            this.DeleteShopButton.Click += new System.EventHandler(this.DeleteShopButton_Click);
+            // 
+            // DeleteRestaurantButton
+            // 
+            this.DeleteRestaurantButton.Location = new System.Drawing.Point(12, 260);
+            this.DeleteRestaurantButton.Name = "DeleteRestaurantButton";
+            this.DeleteRestaurantButton.Size = new System.Drawing.Size(166, 23);
+            this.DeleteRestaurantButton.TabIndex = 9;
+            this.DeleteRestaurantButton.Text = "Delete Restaurant";
+            this.DeleteRestaurantButton.UseVisualStyleBackColor = true;
+            this.DeleteRestaurantButton.Click += new System.EventHandler(this.DeleteRestaurantButton_Click);
+            // 
+            // DeleteMuseumButton
+            // 
+            this.DeleteMuseumButton.Location = new System.Drawing.Point(12, 289);
+            this.DeleteMuseumButton.Name = "DeleteMuseumButton";
+            this.DeleteMuseumButton.Size = new System.Drawing.Size(166, 23);
+            this.DeleteMuseumButton.TabIndex = 10;
+            this.DeleteMuseumButton.Text = "Delete Museum";
+            this.DeleteMuseumButton.UseVisualStyleBackColor = true;
+            this.DeleteMuseumButton.Click += new System.EventHandler(this.DeleteMuseumButton_Click);
+            // 
+            // DeleteActivityButton
+            // 
+            this.DeleteActivityButton.Location = new System.Drawing.Point(12, 318);
+            this.DeleteActivityButton.Name = "DeleteActivityButton";
+            this.DeleteActivityButton.Size = new System.Drawing.Size(166, 23);
+            this.DeleteActivityButton.TabIndex = 11;
+            this.DeleteActivityButton.Text = "Delete Activity";
+            this.DeleteActivityButton.UseVisualStyleBackColor = true;
+            this.DeleteActivityButton.Click += new System.EventHandler(this.DeleteActivityButton_Click);
+            // 
             // AdminWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(192, 475);
+            this.ClientSize = new System.Drawing.Size(192, 425);
+            this.Controls.Add(this.DeleteActivityButton);
+            this.Controls.Add(this.DeleteMuseumButton);
+            this.Controls.Add(this.DeleteRestaurantButton);
+            this.Controls.Add(this.DeleteShopButton);
             this.Controls.Add(this.AddDateTimeButton);
             this.Controls.Add(this.ExitButton);
             this.Controls.Add(this.AddLangToActButton);
@@ -147,5 +195,9 @@
         private Button AddLangToActButton;
         private Button ExitButton;
         private Button AddDateTimeButton;
+        private Button DeleteShopButton;
+        private Button DeleteRestaurantButton;
+        private Button DeleteMuseumButton;
+        private Button DeleteActivityButton;
     }
 }

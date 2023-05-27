@@ -64,5 +64,29 @@ namespace TouristAgency_DatabasePractice.Forms
             NewDateTimeWindow newDateTimeWindow = new NewDateTimeWindow();
             newDateTimeWindow.ShowDialog();
         }
+
+        private void DeleteShopButton_Click(object sender, EventArgs e)
+        {
+            DeleteShopWindow deleteShopWindow = new DeleteShopWindow();
+            deleteShopWindow.ShowDialog();
+        }
+
+        private void DeleteRestaurantButton_Click(object sender, EventArgs e)
+        {
+            DeleteRestaurantWindow deleteRestaurantWindow = new DeleteRestaurantWindow();
+            deleteRestaurantWindow.ShowDialog();
+        }
+
+        private void DeleteMuseumButton_Click(object sender, EventArgs e)
+        {
+            DeleteMuseumWindow deleteMuseumWindow = new DeleteMuseumWindow();
+            deleteMuseumWindow.ShowDialog();
+        }
+
+        private void DeleteActivityButton_Click(object sender, EventArgs e)
+        {
+            DeleteActivityWindow deleteActivityWindow = new DeleteActivityWindow();
+            deleteActivityWindow.ShowDialog();
+        }
     }
 }
