@@ -14,9 +14,28 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
 {
     public partial class DeleteMuseumWindow : Form
     {
+        private int SelectedID { get; set; }
         public DeleteMuseumWindow()
         {
             InitializeComponent();
+            LoadData();
+        }
+        private async void DeleteButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Museum museum = new Museum();
+                SelectedID = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
+                museum.ID = SelectedID;
+                DataAccess da = new DataAccess();
+                await da.SaveData("dbo.DeleteMuseumProc", new { museum.ID });
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+                return;
+            }
+            MessageBox.Show("Success!");
             LoadData();
         }
         private async void LoadData()

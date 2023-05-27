@@ -24,11 +24,22 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
 
         private async void DeleteButton_Click(object sender, EventArgs e)
         {
-        SelectedID = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
-        DataAccess da = new DataAccess();
-        await da.SaveData("dbo.DeleteShopProc", new { SelectedID });
+            try
+            {
+                Shop shop = new Shop();
+                SelectedID = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
+                shop.ID = SelectedID;
+                DataAccess da = new DataAccess();
+                await da.SaveData("dbo.DeleteShopProc", new { shop.ID });
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+                return;
+            }
+            MessageBox.Show("Success!");
+            LoadData();
         }
-
 
         private async void LoadData()
         {

@@ -14,9 +14,28 @@ namespace TouristAgency_DatabasePractice.Forms.AdminPanelWindows
 {
     public partial class DeleteActivityWindow : Form
     {
+        private int SelectedID { get; set; }
         public DeleteActivityWindow()
         {
             InitializeComponent();
+            LoadData();
+        }
+        private async void DeleteButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Activity activity = new Activity();
+                SelectedID = Convert.ToInt32(dataGridView.SelectedRows[0].Cells[0].Value);
+                activity.ID = SelectedID;
+                DataAccess da = new DataAccess();
+                await da.SaveData("dbo.DeleteActivityProc", new { activity.ID });
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+                return;
+            }
+            MessageBox.Show("Success!");
             LoadData();
         }
         private async void LoadData()
