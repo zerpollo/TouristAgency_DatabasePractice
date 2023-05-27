@@ -14,6 +14,7 @@ namespace TouristAgency_DatabasePractice.Core
     {
         // should be only changed once when launching the program
         public static Client CurrentClient;
+        public static Tour CurrentTour;
 
         // lists of everything we have in DB
         public static List<Museum> Museums;
