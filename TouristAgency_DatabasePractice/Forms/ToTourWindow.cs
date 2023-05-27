@@ -95,6 +95,8 @@ namespace TouristAgency_DatabasePractice.Forms
                 ToursRestaurants TR = new ToursRestaurants(GlobalVariables.CurrentTour.ID, rest.ID);
                 await da.SaveData("dbo.InsertNewToursRestaurantsProc", new { TR.TourID, TR.RestaurantID });
             }
+            MessageBox.Show("Your tour ID is " + GlobalVariables.CurrentTour.ID + " show this ID when entering the events");
+            Close();
         }
 
         private void NumberOfPeopleComboBox_SelectedValueChanged(object sender, EventArgs e)
